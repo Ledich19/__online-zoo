@@ -1,0 +1,312 @@
+.testimonials {
+  position: relative;
+  padding: 140px 0 180px 0;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 1000px) {
+    padding: 100px 0 140px 0;
+  }
+
+  @media (max-width: 640px) {
+    padding: 62px 0 79px 0;
+
+  }
+
+  @media (max-width: 320px) {
+    padding: 31px 0 60px 0;
+
+  }
+
+  &__title {
+    text-align: center;
+
+    @media (max-width: 320px) {}
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: scroll;
+    transition: all 2s ease 0s;
+    scroll-behavior: smooth;
+&::-webkit-scrollbar {
+  height: 0;
+  display: none;
+}
+    // @media (max-width: 1170px) {
+    //   justify-content: space-around;
+
+    // }
+
+    @media (max-width: 1000px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 20px;
+
+    }
+
+    @media (max-width: 840px) {
+      margin-top: 20px;
+      padding-right: 0;
+
+    }
+    @media (max-width: 320px) {
+      margin-top: 0px;
+      padding-bottom: 52px;
+    }
+  }
+
+
+  &__comments {
+    margin-top: 50px;
+    //overflow: scroll;
+
+    @media (max-width: 1000px) {
+      margin-top: 34px;
+
+    }
+
+    @media (max-width: 840px) {
+      margin-top: 20px;
+
+    }
+
+    @media (max-width: 320px) {
+      margin-top: 10px;
+
+    }
+  }
+
+  &__comment {
+    @media (max-width: 1170px) {
+      &:last-child {
+        //display: none;
+      }
+    }
+
+  }
+
+  &__line-scroll {
+    -webkit-appearance: none;
+    width: 51%;
+    display: block;
+    margin: 22px auto 0 auto;
+    height: 6px;
+    border-radius: 3px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+
+    @media (max-width: 1000px) {
+      width: 42%;
+    }
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 60px;
+      height: 6px;
+      border-radius: 3px;
+      background: #FE9013;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 35px;
+      height: 35px;
+      background: #FE9013;
+      cursor: pointer;
+    }
+  }
+
+  &__feedback {
+    display: block;
+    margin: 31px 0 0 0;
+    border-radius: 5px;
+
+    @media (max-width: 1000px) {
+
+      margin: 52px 0 0 0;
+
+    }
+
+    @media (max-width: 640px) {
+      margin: 0 auto;
+      margin-top: 43px;
+      width: 243px;
+    }
+
+    @media (max-width: 320px) {
+
+      margin-top: 30px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0px;
+    bottom: -134px;
+
+    @media (max-width: 1000px) {
+      right: 0px;
+      bottom: -79px;
+      height: 318px;
+    }
+
+    @media (max-width: 640px) {
+      height: 200px;
+      bottom: -65px;
+      right: -7px;
+    }
+
+    @media (max-width: 320px) {
+      height: 100px;
+      right: 0px;
+      bottom: -36px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background: linear-gradient(173.12deg, #E3E2F4 1.27%, #FBCCBE 93.11%);
+  width: 268px;
+  height: 391px;
+  border-radius: 20px;
+  flex: 0 0 auto;
+
+
+  @media (max-width: 1170px) {
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 112px;
+    margin-top: 10px;
+  }
+
+
+  &__border {
+    border-radius: 20px;
+    z-index: inherit;
+
+    background: #F5F7F6;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    padding: 14px 17px;
+    overflow: auto;
+    scrollbar-width: none;
+
+    @media (max-width: 640px) {
+      padding: 16px 8px;
+      overflow:visible;
+    }
+
+    @media (max-width: 320px) {
+
+      padding: 10px 10px;
+    }
+
+    &::-webkit-scrollbar {
+      /* chrome based */
+      width: 0px;
+      /* ширина scrollbar'a */
+      background: transparent;
+      /* опционально */
+    }
+  }
+
+
+  &__header {
+    display: flex;
+  }
+
+  &__photo {
+    height: 35px;
+    width: 35px;
+border-radius: 50%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+border-radius: 50%;
+
+    }
+  }
+
+  &__info {
+    margin-left: 10px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  &__local {
+    color: #BDBDBD;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  &__last-visit {
+    position: relative;
+    color: #BDBDBD;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    margin-left: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(-100%, -50%);
+
+      background: #BDBDBD;
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+
+    @media (max-width: 768px) {
+      white-space: nowrap; /* Запрещаем перенос строк */
+      overflow: hidden; /* Обрезаем все, что не помещается в область */
+      text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+  }
+}

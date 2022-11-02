@@ -1,0 +1,25 @@
+.panda {
+  background-image: url(./../../assets/images/main/Giant_Panda.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 386px;
+}
+@media (max-width: 1000px) {
+  .panda {
+    height: 389px;
+  }
+}
+@media (max-width: 640px) {
+  .panda {
+    margin-top: 35px;
+    height: 333px;
+  }
+}
+@media (max-width: 320px) {
+  .panda {
+  background-size: 200%;
+
+    height: 185px;
+  }
+}

@@ -1,0 +1,144 @@
+.backstage {
+  position: relative;
+  padding: 140px 0 90px 0;
+  width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 1000px) {
+    padding: 109px 0 60px 0;
+  }
+
+  @media (max-width: 640px) {
+    padding: 71px 0 60px 0;
+  }
+
+  @media (max-width: 320px) {
+    padding: 114px 0 20px 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 7.5%;
+
+    @media (max-width: 1000px) {
+      gap: 3.3%;
+    }
+  }
+
+  &__photo {
+    flex: 0 0 auto;
+    width: 52.5%;
+    height: 401px;
+
+    @media (max-width: 1000px) {
+      width: 456px;
+      height: 407px;
+    }
+
+    @media (max-width: 840px) {
+      width: 299px;
+      height: 202px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {}
+
+  &__title {
+    @media (max-width: 1000px) {
+      margin-top: -9px;
+
+    }
+
+    @media (max-width: 640px) {
+
+      padding-right: 18px;
+    }
+    @media (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    @media (max-width: 640px) {
+      padding-right: 104px;
+    }
+
+    @media (max-width: 450px) {
+      padding-right: 30px;
+    }
+    @media (max-width: 320px) {
+
+      margin-top: 10px;
+      padding-right: 0px;
+    }
+
+    &._lh-bigger {
+      margin-top: 34px;
+      line-height: 140%;
+
+      @media (max-width: 640px) {
+        margin-top: 20px;
+
+      }
+
+      @media (max-width: 320px) {
+        margin-top: 10px;
+
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 55px 0px 0px 0px;
+
+    @media (max-width: 640px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 320px) {
+      margin-top: 21px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0px;
+    top: 13px;
+
+    @media (max-width: 1520px) {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      display: block;
+      height: 469px;
+      margin-right: -27px;
+      top: 0px;
+    }
+
+    @media (max-width: 600px) {
+      height: 208px;
+      top: 42px;
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

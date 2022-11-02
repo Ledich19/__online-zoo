@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-penguin_icon:before {
+  content: "\e900";
+}
+._icon-cheetah_icon .path1:before {
+  content: "\e901";
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+._icon-cheetah_icon .path2:before {
+  content: "\e903";
+  margin-left: -2.2998046875em;
+  color: rgb(0, 0, 0);
+}
+._icon-cheetah_icon .path3:before {
+  content: "\e905";
+  margin-left: -2.2998046875em;
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+._icon-cheetah_icon .path4:before {
+  content: "\e906";
+  margin-left: -2.2998046875em;
+  color: rgb(0, 0, 0);
+}
+._icon-cheetah_icon .path5:before {
+  content: "\e90b";
+  margin-left: -2.2998046875em;
+  color: rgb(0, 0, 0);
+}
+._icon-alligator_icon:before {
+  content: "\e90d";
+}
+._icon-sloth_icon:before {
+  content: "\e90e";
+}
+._icon-Gorilla_widget3:before {
+  content: "\e90f";
+}
+._icon-Eagle_widget4:before {
+  content: "\e910";
+}
+._icon-Vector:before {
+  content: "\e902";
+}
+._icon-animals-widget:before {
+  content: "\e904";
+}
+._icon-meet-fish_icon .path1:before {
+  content: "\e907";
+  color: rgb(238, 131, 131);
+}
+._icon-meet-fish_icon .path2:before {
+  content: "\e908";
+  margin-left: -1.2626953125em;
+  color: rgb(122, 120, 113);
+}
+._icon-banana-bamboo_icon .path1:before {
+  content: "\e909";
+  color: rgb(70, 142, 13);
+}
+._icon-banana-bamboo_icon .path2:before {
+  content: "\e90a";
+  margin-left: -0.8916015625em;
+  color: rgb(255, 238, 46);
+}
+._icon-Vector1:before {
+  content: "\e90c";
+  color: #767474;
+}
+._icon-arrow-right:before {
+  content: "\ea3c";
+}
+._icon-arrow-left:before {
+  content: "\ea40";
+}
+._icon-facebook:before {
+  content: "\ea90";
+}
+._icon-instagram:before {
+  content: "\ea92";
+}
+._icon-twitter:before {
+  content: "\ea96";
+}
+._icon-youtube:before {
+  content: "\ea9d";
+}
+
+

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+
+  @media (max-width: 1000px) {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%
+  }
+
+  @media (max-width: 320px) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+
+  @media (max-width: 320px) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.btn-orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 140%;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
+  &:hover {
+    background: #E47209;
+  }
+
+  &:active {
+    background: #4B9200;
+  }
+
+  &:disabled {
+    background: #767474;
+  }
+
+  @media (max-width: 320px) {
+    // width: 283px;
+  }
+}
+
+._container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 0;
+
+  @media (max-width: 1280px) {
+    padding: 0 28px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 0 19.7px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .popup {
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.539);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__close{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .comment {
+position: relative;
+      width: 45%;
+      height: auto;
+      &__border {
+        overflow: visible;
+
+        &::-webkit-scrollbar {
+          /* chrome based */
+          width: 0px;
+          /* ширина scrollbar'a */
+          background: transparent;
+          /* опционально */
+        }
+      }
+&__text{
+  white-space: normal; 
+    overflow: visible; 
+    text-overflow:clip;
+}
+
+    }
+  }
+}
